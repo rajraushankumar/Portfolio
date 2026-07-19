@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajraushan Kumar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== APP SHELL ===================== -->
+<div class="app">
+
+  <!-- ===================== LEFT SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="profile-block fade-in">
+        <div class="avatar-ring">
+          <img src="profile.jpeg" alt="Rajraushan Kumar" class="avatar-img">
+        </div>
+        <h1 class="profile-name">Rajraushan Kumar</h1>
+
+        <div class="tag-list">
+          <span class="tag">AI & ML</span>
+          <span class="tag">IT Student @GNSU</span>
+          <span class="tag">Full Stack Developer</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="theme-toggle-row">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label" id="themeLabel">Light Mode</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="contact-mini">
+        <a class="contact-row" href="mailto:rajraushankumar360@gmail.com">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5L12 13L21 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="4.5" width="18" height="15" rx="2.2" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <div class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">rajraushankumar360@gmail.com</span>
+          </div>
+        </a>
+        <a class="contact-row" href="tel:+910000000000">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <div class="contact-text">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 90000 00000</span>
+          </div>
+        </a>
+      </div>
+
+      <a href="Rajraushan Resume.pdf" class="btn btn-primary btn-block resume-btn" id="resumeBtn">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download Resume
+      </a>
+
+     <div class="social-row">
+
+  <!-- GitHub -->
+  <a href="https://github.com/rajraushankumar" target="_blank" class="social-icon" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/rajraushankumar" target="_blank" class="social-icon" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.5h4.5V23h-4.5V8.5zm7.7 0h4.3v1.98h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4.5V8.5z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/@rajraushanofficial?si=aegT_qhFV6GkSy8A" target="_blank" class="social-icon" aria-label="YouTube">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM10 15.5v-7l6 3.5-6 3.5Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/rajraushan_singh_rajput_?igsh=eGI0dTNsY3JrMTRo" target="_blank" class="social-icon" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/>
+    </svg>
+  </a>
+
+</div>
+
+    </div>
+  </aside>
+
+  <!-- ===================== RIGHT CONTENT ===================== -->
+  <main class="content">
+
+    <!-- STICKY TOP NAV -->
+    <nav class="top-nav" id="topNav">
+      <div class="nav-track">
+        <a href="#about" class="nav-link active" data-section="about">About</a>
+        <a href="#project" class="nav-link" data-section="project">Project</a>
+        <a href="#connect" class="nav-link" data-section="connect">Connect</a>
+        <a href="#skill" class="nav-link" data-section="skill">Skill</a>
+        <a href="#certificate" class="nav-link" data-section="certificate">Certificate</a>
+        <a href="#education" class="nav-link" data-section="education">Education</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <span class="nav-indicator" id="navIndicator"></span>
+    </nav>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="card reveal">
+        <h2 class="section-heading">About Me<span class="underline"></span></h2>
+
+        <p class="body-text">
+          Hi, I'm <strong>Rajraushan Kumar</strong> a BCA student specializing in Data Science &amp; Artificial Intelligence at a <strong>Gopal Narayan Singh University (GNSU).</strong> I'm passionate about technology, problem-solving, and building practical solutions using data and code.
+        </p>
+
+        <p class="body-text">
+           Currently, I'm focused on strengthening my skills in <strong>Frontend Development, Python, Machine Learning, and Artificial Intelligence.</strong>  I enjoy turning ideas into real projects through continuous experimentation and hands-on practice. I believe in learning by doing and improving every day.
+        </p>
+
+        <p class="body-text">
+          Alongside my academic journey, I have built several personal and academic projects using <strong>HTML5, CSS3, JavaScript (ES6+), React.js, Bootstrap, and Python</strong>. I enjoy creating responsive, user-friendly web applications and continuously improving my technical skills by exploring modern development tools and best practices.
+        </p>
+
+        <p class="body-text">
+           My goal is to begin my career as a <strong>Software Developer</strong>, contribute to meaningful projects, gain practical industry experience through internships, and keep growing as a developer while learning new technologies.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-count="8">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <!-- <section class="section" id="project">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Projects<span class="underline"></span></h2>
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="ai">AI &amp; ML</button>
+          <button class="filter-tab" data-filter="apps">Applications</button>
+          <button class="filter-tab" data-filter="web">Web development</button>
+          <button class="filter-tab" data-filter="other">Others</button>
+        </div>
+      </div> -->
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card reveal" data-cat="ai apps">
+          <div class="project-thumb">
+            <img src="images/dashboard.png" alt="Finance AI Dashboard" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Finance AI</h3>
+            <p class="project-desc">A full-stack financial management application that helps users track income, manage expenses, plan monthly budgets, and receive automated financial insights.</p>
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">SQLite</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">ReportLab</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/rajraushankumar/FinanceAI" target="_blank" class="btn btn-ghost">View Code</a>
+              <a href="https://myfinanceaiapp-lkca.onrender.com" target="_blank" class="btn btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+         <article class="project-card reveal" data-cat="web apps">
+          <div class="project-thumb">
+            <img src="Vacancy.png" alt="Vacancy Portal" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Vacancy Portal</h3>
+            <p class="project-desc">Built a Vacancy Application in the Recruitment domain with responsive design.</p>
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">Bootstrap</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/rajraushankumar/Python-backend" target="_blank" class="btn btn-ghost">View Code</a>
+              <a href="https://raj-vacancy-portal.onrender.com" target="_blank" class="btn btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+       <article class="project-card reveal" data-cat="web">
+        <div class="project-thumb">
+          <img src="projects.png" alt="Online Quiz Project" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="badge-row">
+            <span class="badge">Web App</span>
+            <span class="badge">Jan, 2026</span>
+          </div>
+          <h3 class="project-title">Online Quiz-Project</h3>
+          <p class="project-desc">A modern Quiz application made with HTML5, featuring dynamic question loading, instant score calculation, and a clean, responsive interface that works smoothly across all devices.</p>
+          <div class="badge-row">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rajraushankumar/Quiz-Project" target="_blank" class="btn btn-ghost">View Code</a>
+            <a href="https://rajraushankumar.github.io/Quiz-Project/" target="_blank" class="btn btn-primary">Live Demo</a>
+          </div>
+        </div>
+      </article>
+        
+
+       
+
+        <!-- <article class="project-card reveal" data-cat="ai">
+          <div class="mockup mockup-rag">
+            <div class="mockup-topbar"><span></span><span></span><span></span></div>
+            <div class="mockup-body rag-body">
+              <div class="terminal-line"><span class="t-green">PS</span> C:\Users\DELL\RAG_System&gt; python rag.py</div>
+              <div class="terminal-line dim">Total chunks created: 82</div>
+              <div class="terminal-line dim">Ask a question (type exit to quit):</div>
+              <div class="terminal-line">&gt; What is prompt engineering?</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">RAG Knowledge Assistant</h3>
+            <p class="project-desc">A retrieval-augmented generation system with LangChain and HuggingFace embeddings that answers questions grounded in custom document sources.</p>
+            <div class="badge-row">
+              <span class="badge">LangChain</span>
+              <span class="badge">HuggingFace</span>
+              <span class="badge">Python</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost">View Code</a>
+              <a href="#" class="btn btn-primary">View Model</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="ai">
+          <div class="mockup mockup-cv">
+            <div class="mockup-topbar"><span></span><span></span><span></span></div>
+            <div class="mockup-body cv-body">
+              <div class="cv-box cv-box-1">Brown Swiss (26.0%)</div>
+              <div class="cv-box cv-box-2">Nagpuri (32.4%)</div>
+              <div class="cv-box cv-box-3">Dog (95.5%)</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Livestock &amp; Object Detection</h3>
+            <p class="project-desc">A computer vision model that detects and classifies animals in real time from live camera or video feeds using bounding-box inference.</p>
+            <div class="badge-row">
+              <span class="badge">YOLO</span>
+              <span class="badge">Computer Vision</span>
+              <span class="badge">Python</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost">View Code</a>
+              <a href="#" class="btn btn-primary">View Model</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="web">
+          <div class="mockup mockup-chat">
+            <div class="mockup-topbar"><span></span><span></span><span></span></div>
+            <div class="mockup-body chat-body">
+              <div class="chat-header">🤖 Chatbot → for YOU</div>
+              <div class="chat-bubble">Welcome! Choose a task from the sidebar, upload a file if needed, then chat via text or voice.</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Chatbot → for YOU</h3>
+            <p class="project-desc">A general-purpose assistant web app supporting document upload, task-based chat modes, and both text and voice interaction.</p>
+            <div class="badge-row">
+              <span class="badge">JavaScript</span>
+              <span class="badge">OpenAI API</span>
+              <span class="badge">Node.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-ghost">View Code</a>
+              <a href="#" class="btn btn-primary">View Model</a>
+            </div>
+          </div>
+        </article> -->
+
+      </div>
+    </section>
+
+    <!-- ===================== PROFILE (See Me + Future Goals + Gallery) ===================== -->
+    <section class="section" id="connect">
+
+      <div class="reveal">
+        <h2 class="section-heading">Connect<span class="underline"></span></h2>
+      </div>
+
+      <div class="seeme-row reveal">
+        <div class="seeme-card">
+          <div class="seeme-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 3.5h9l4 4V19a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 015 19V5A1.5 1.5 0 016 3.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 9h5M9 12h5M9 15h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16.5" cy="16.5" r="3.2" fill="var(--bg)" stroke="currentColor" stroke-width="1.4"/><path d="M18.6 18.6L20.5 20.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="seeme-body">
+            <h3 class="seeme-title">My Resume</h3>
+            <p class="seeme-desc">Here is my resume, which includes my educational background, skills, and projects.</p>
+            <div class="seeme-actions">
+              <a href="Rajraushan Resume.pdf" target="_blank" class="btn btn-outline">View</a>
+              <a href="Rajraushan Resume.pdf" download class="btn btn-outline">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="seeme-card">
+          <div class="seeme-icon seeme-icon-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.5h4.5V23h-4.5V8.5zm7.7 0h4.3v1.98h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4.5V8.5z"/></svg>
+          </div>
+          <div class="seeme-body">
+            <h3 class="seeme-title">My LinkedIn Profile</h3>
+            <p class="seeme-desc">Check out my LinkedIn profile to see my professional experience and connect with me.</p>
+            <div class="seeme-actions">
+              <a href="https://www.linkedin.com/in/rajraushankumar" target="_blank" class="btn btn-outline">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="seeme-card">
+          <div class="seeme-icon seeme-icon-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/></svg>
+          </div>
+          <div class="seeme-body">
+            <h3 class="seeme-title">My GitHub</h3>
+            <p class="seeme-desc">Explore my repositories to see my code, projects, and contributions in detail.</p>
+            <div class="seeme-actions">
+              <a href="https://github.com/rajraushankumar" target="_blank" class="btn btn-outline">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-track reveal" style="margin-bottom:56px;">
+        <div class="progress-fill"></div>
+      </div>
+    </section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section" id="skill">
+  <div class="reveal">
+    <h2 class="section-heading">skills<span class="underline"></span></h2>
+  </div>
+
+  
+      <!-- Tech Stack - full width -->
+  <div class="info-card reveal" style="margin-bottom:24px;">
+    <h3 class="info-card-title">Tech Stack</h3>
+    <div class="badge-row wrap">
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">React</span>
+      <span class="badge">Python</span>
+      <span class="badge">Java</span>
+      <span class="badge">AWS</span>
+      <span class="badge">Git</span>
+      <span class="badge">GitHub</span>
+      <span class="badge">Responsive Design</span>
+      <span class="badge">Node.js</span>
+    </div>
+  </div>
+
+      <!-- <div class="reveal">
+        <h2 class="section-heading">Future Goals<span class="underline"></span></h2>
+      </div>
+
+      <div class="goals-row reveal">
+        <div class="goal-card">
+          <div class="goal-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 6l-4 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="goal-tag">Project</span>
+          <h3 class="goal-title">Emotion-Aware Content Recommender</h3>
+          <p class="goal-desc">A web app that listens to your text or voice input, detects your emotional tone, and recommends content that matches or improves your mood.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5V6a2 2 0 012-2h11l3 3v12.5a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 15l2.5-2.5L13 15l3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="goal-tag">Learning</span>
+          <h3 class="goal-title">Deep Dive In AI</h3>
+          <p class="goal-desc">Master AI foundations and practical ML — linear algebra, probability, deep learning architectures, and production-grade model deployment.</p>
+        </div>
+
+        <div class="goal-card">
+          <div class="goal-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="goal-tag">Vision</span>
+          <h3 class="goal-title">#</h3>
+          <p class="goal-desc">Grow BoloSite into the go-to platform for businesses to embed conversational AI agents across web and mobile experiences.</p>
+        </div>
+      </div> -->
+</section>
+
+<!-- ===================== CERTIFICATES ===================== -->
+<section class="section" id="certificate">
+
+<div class="reveal" style="margin-top:56px;">
+  <h2 class="section-heading">
+    Certificate
+    <span class="underline"></span>
+  </h2>
+</div>
+
+<div class="gallery-grid reveal" id="galleryGrid">
+  <div class="gallery-item" data-img="images/gnsu.png">
+    <div class="cert-thumb" style="background-image:url('images/gnsu.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">GNSU</span>
+      <p class="cert-title">Building Real-World Application</p>
+      <p class="cert-sub">29th Nov 2025 at Gopal Narayan Singh University.</p>
+    </div>
+  </div>
+
+  <!-- <a href="https://courses.ibmcep.cognitiveclass.ai/certificates/0274b6f3a97d4b82a8142882ef6cad04" target="_blank" class="cert-card"> -->
+
+  <div class="gallery-item" data-img="images/Frontend.png">
+    <div class="cert-thumb" style="background-image:url('images/Frontend.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IBM</span>
+      <p class="cert-title">Front End Technologies</p>
+      <p class="cert-sub">April 25, 2025</p>
+    </div>
+  </div>
+  <!-- </a> -->
+  <div class="gallery-item" data-img="images/Predict.png">
+    <div class="cert-thumb" style="background-image:url('images/Predict.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IBM</span>
+      <p class="cert-title">Predictive Analytics using IBM SPSS Modeler</p>
+      <p class="cert-sub">December 22, 2025</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/Bigdata.png">
+    <div class="cert-thumb" style="background-image:url('images/Bigdata.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IBM</span>
+      <p class="cert-title">Big Data Technologies - Spark & Scala</p>
+      <p class="cert-sub">June 23, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/IEEE.png">
+    <div class="cert-thumb" style="background-image:url('images/IEEE.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">GNSU</span>
+      <p class="cert-title">IEEE Education Week 2026 – SDP</p>
+      <p class="cert-sub">17 April 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/nexify.png">
+    <div class="cert-thumb" style="background-image:url('images/nexify.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">NEXIFY</span>
+      <p class="cert-title">Nexify'26 National Hackathon</p>
+      <p class="cert-sub">April, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/infosys.png">
+    <div class="cert-thumb" style="background-image:url('images/infosys.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">INFOSYS</span>
+      <p class="cert-title">R Programming for Beginners</p>
+      <p class="cert-sub">July 30, 2025</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/ijedr.png">
+    <div class="cert-thumb" style="background-image:url('images/ijedr.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IJEDR</span>
+      <p class="cert-title">AI-Based Algorithmic Trading using SMAC &amp; OBV</p>
+      <p class="cert-sub">January 01, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/jaafr.png">
+    <div class="cert-thumb" style="background-image:url('images/jaafr.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">JAAFR</span>
+      <p class="cert-title">RL-Based Equity Trading with Candlestick Patterns</p>
+      <p class="cert-sub">February 01, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/ppo.png">
+    <div class="cert-thumb" style="background-image:url('images/ppo.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IJSAT</span>
+      <p class="cert-title">PPO Stock Trading Model</p>
+      <p class="cert-sub">March, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/ijedr2.png">
+    <div class="cert-thumb" style="background-image:url('images/ijedr2.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IJEDR</span>
+      <p class="cert-title">Machine Learning Investment System</p>
+      <p class="cert-sub">February 10, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/super.png">
+    <div class="cert-thumb" style="background-image:url('images/super.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IJSAT</span>
+      <p class="cert-title">Super Stock Trading With RL</p>
+      <p class="cert-sub">March, 2026</p>
+    </div>
+  </div>
+
+  <div class="gallery-item" data-img="images/digital.jpg">
+    <div class="cert-thumb" style="background-image:url('images/digital.jpg');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">MY GOV</span>
+      <p class="cert-title">Digital India Quiz</p>
+      <p class="cert-sub">August, 2025</p>
+    </div>
+  </div>
+
+   <div class="gallery-item" data-img="images/capture.png">
+    <div class="cert-thumb" style="background-image:url('images/capture.png');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">IJSAT</span>
+      <p class="cert-title">Capture Market Trends using RL</p>
+      <p class="cert-sub">March, 2026</p>
+    </div>
+  </div>
+
+   <div class="gallery-item" data-img="images/quiz.jpg">
+    <div class="cert-thumb" style="background-image:url('images/quiz.jpg');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">MY GOV</span>
+      <p class="cert-title">Quiz on Role of Women in Shaping the New India</p>
+      <p class="cert-sub">August, 2025</p>
+    </div>
+  </div>
+
+   <div class="gallery-item" data-img="images/Rongoli.jpg">
+    <div class="cert-thumb" style="background-image:url('images/Rongoli.jpg');"></div>
+    <div class="cert-info">
+      <span class="cert-badge">GNSU</span>
+      <p class="cert-title">Rongoli Competition</p>
+      <p class="cert-sub">july, 2024</p>
+    </div>
+  </div>
+
+
+</div>
+<!-- ===================== IMAGE LIGHTBOX MODAL ===================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img src="" id="lightboxImg" class="lightbox-img">
+</div>
+
+</section>
+
+
+<!-- ===================== INFO (skills / experience) ===================== -->
+<section class="section" id="education">
+  <div class="reveal">
+    <h2 class="section-heading">Education<span class="underline"></span></h2>
+  </div>
+
+  
+
+  <!-- Education - 3 separate cards -->
+  <div class="info-grid reveal">
+
+    <div class="info-card">
+  <h3 class="info-card-title">Education</h3>
+  <div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <p class="timeline-title">Bachelor of Computer Applications (BCA), DS &amp; AI</p>
+    <p class="timeline-sub">GNSU • 2024 – 2027</p>
+
+    <!-- Domain badges - normal flow mein, margin-top ke saath -->
+    <div class="badge-row wrap" style="margin-top:14px;">
+      <span class="badge">Data Science</span>
+      <span class="badge">AI/ML</span>
+      <span class="badge">Python</span>
+      <span class="badge">Web Development</span>
+    </div>
+  </div>
+</div>
+
+    <div class="info-card">
+      <h3 class="info-card-title">Higher Secondary Education</h3>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-title">R.L.S.Y. College, Aurangabad, Bihar</p>
+        <p class="timeline-sub">Completed with focus on Science and Mathematics, developing analytical and problem-solving skills.</p>
+        <p class="timeline-sub">2022 – 2024</p>
+        <div class="badge-row wrap" style="margin-top:14px;">
+      <span class="badge">Mathematics</span>
+      <span class="badge">Science</span>
+      <span class="badge">Computer Science</span>
+      <!-- <span class="badge">Web Development</span> -->
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3 class="info-card-title">Secondary Education</h3>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-title">Vivekanand Vision Ideal Public School, Aurangabad, Bihar</p>
+        <p class="timeline-sub">Successfully completed with a strong academic foundation in core subjects.</p>
+        <p class="timeline-sub">2020 – 2022</p>
+         <div class="badge-row wrap" style="margin-top:14px;">
+      <span class="badge">Mathematics</span>
+      <span class="badge">Science</span>
+      <span class="badge">English</span>
+      <span class="badge">Social Science</span>
+    </div>
+    
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="reveal">
+        <h2 class="section-heading">Contact<span class="underline"></span></h2>
+        <p class="body-text">Have a project in mind or just want to say hi? My inbox is always open.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block ripple-btn" id="sendBtn">
+            Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+        <div class="contact-side">
+          <div class="side-card">
+            <h3 class="info-card-title">Let's Connect</h3>
+            <p class="body-text small">Prefer email or social? Reach out directly — I usually reply within a day.</p>
+            <div class="contact-mini">
+              <a class="contact-row" href="mailto:rajraushan@gmail.com">
+                <span class="icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5L12 13L21 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="4.5" width="18" height="15" rx="2.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                </span>
+                <div class="contact-text">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">rajraushankumar360@gmail.com</span>
+                </div>
+              </a>
+              <a class="contact-row" href="tel:+910000000000">
+                <span class="icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="contact-text">
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value">+91 90000 00000</span>
+                </div>
+              </a>
+            </div>
+          <div class="social-row">
+
+  <!-- GitHub -->
+  <a href="https://github.com/rajraushankumar" target="_blank" class="social-icon" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.3 5.6 18.3.5 12 .5z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/rajraushankumar" target="_blank" class="social-icon" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.5h4.5V23h-4.5V8.5zm7.7 0h4.3v1.98h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4.5V8.5z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/@rajraushanofficial?si=aegT_qhFV6GkSy8A" target="_blank" class="social-icon" aria-label="YouTube">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM10 15.5v-7l6 3.5-6 3.5Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/rajraushan_singh_rajput_?igsh=eGI0dTNsY3JrMTRo" target="_blank" class="social-icon" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/>
+    </svg>
+  </a>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Rajraushan Kumar. Crafted with care.</p>
+      </footer>
+    </section>
+
+  </main>
+</div>
+
+<!-- ===================== MOBILE BOTTOM NAV ===================== -->
+<nav class="bottom-nav" id="bottomNav">
+  <a href="#about" class="bnav-link active" data-section="about">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M5 19c1.4-3.2 4-5 7-5s5.6 1.8 7 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>About</span>
+  </a>
+  <a href="#project" class="bnav-link" data-section="project">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>Project</span>
+  </a>
+  <a href="#certificate" class="bnav-link" data-section="certificate">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h7v7H4V4zM13 4h7v7h-7V4zM4 13h7v7H4v-7zM13 13h7v7h-7v-7z" stroke="currentColor" stroke-width="1.6"/></svg>
+    <span>Certificate</span>
+  </a>
+  <a href="#education" class="bnav-link" data-section="education">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5M12 7.8v.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>Education</span>
+  </a>
+  <a href="#contact" class="bnav-link" data-section="contact">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5L12 13L21 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="4.5" width="18" height="15" rx="2.2" stroke="currentColor" stroke-width="1.8"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
